@@ -21,6 +21,12 @@
         android:textSize="34sp"
         tools:text="Breathless" />
 
+    <TextView
+        android:id="@+id/tvPopularity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="4238.321" />
+
     <RatingBar
         android:id="@+id/ratingBar"
         style="@style/Widget.AppCompat.RatingBar.Indicator"

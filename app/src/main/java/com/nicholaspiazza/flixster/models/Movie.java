@@ -16,6 +16,7 @@ public class Movie {
     String title;
     String overview;
     double rating;
+    String popularity;
 
     // empty constructor needed by the Parceler Library
     public Movie(){
@@ -27,6 +28,7 @@ public class Movie {
         overview = jsonObject.getString("overview");
         rating = jsonObject.getDouble("vote_average");
         movieId = jsonObject.getInt("id");
+        popularity = jsonObject.getString("popularity");
     }
 
     public static List<Movie> fromJsonArray(JSONArray movieJsonArray) throws JSONException {
@@ -55,5 +57,9 @@ public class Movie {
 
     public int getMovieId() {
         return movieId;
+    }
+
+    public String getPopularity() {
+        return popularity;
     }
 }
